@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+  background-color: #F0EBC7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.parent {
+  background-color: #F5FDFF;
+  width: 1094px;
+  height: 300px;
+  max-width: 500px;
+  border-radius: 65px;
+  border: 2px solid black;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #9F0000;
+  border-radius: 63px 63px 0px 0px;
+  border-bottom: 2px solid black;
+  width: 500px;
+  font-family: "Itim", Helvetica, sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+header > img {
+  padding-left: 30px;
+  transition: transform 0.1s ease-in-out;
+  transform-origin: center center;
+}
+
+header > img:hover {
+  transform: scale(1.1);
+  
+}
+
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-family: "Dongle", sans-serif;
+  margin: 0;
+  max-height: 220px;
+
+
+}
+
+.info h1 {
+  font-size: 3.7rem;
+  margin: 1px 0px 0px 30px;
+  position: absolute;
+
+}
+
+.info p {
+  margin: 0;
+  color: #4371C2;
+  line-height: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+  width: 255px;
+  margin: 69px 0px 10px 30px;
+}
+
+#pooh {
+  width: 90px;
+  margin: 0px 0px 0px 320px;
+}
+
+.image-group {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-family: "Dongle", sans-serif;
+}
+
+.image-group img {
+  width: 150px;
+  border-radius: 30px;
+  margin: 18px 0px 0px 19px;
+  border: 2px solid black;
+}
+
+.image-group span {
+  color: #C37A36;
+  margin: 5px 9px 0px 0px;
+  font-size: 1.1rem;
+}
+
+
+/* ===================== */
+/* From Uiverse.io by Gautammsharma */ 
+.comic-button {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.email {
+  position: sticky;
+  margin-right: 8px;
+}
+
+.linkedin {
+  position: sticky;
+  margin-right: 8px;
+}
+
+.instagram {
+  position: sticky;
+  left: 300px;
+  margin-right: 150px;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #3f8a53;
+  border: 2px solid #3f8a53;
+  box-shadow: 5px 5px 0px #3f8a53;
+}
+
+.comic-button:active {
+  background-color: #0d6324;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
