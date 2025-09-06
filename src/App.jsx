@@ -15,17 +15,18 @@ function App() {
   return (
     <>
       <img
-            src="./images/pooh-winnie-the-pooh.gif"
-            width="50px"
-            id="pooh"
-            />
+        src="/images/pooh-winnie-the-pooh.gif"
+        width="50px"
+        id="pooh"
+        alt="Pooh"
+      />
       <main className="parent">
         <header>
           <img
-            src="./images/mifoi.png"
+            src="/images/mifoi.png"
             width="50px"
             onMouseEnter={playSound}
-            alt="logo"
+            alt="Logo"
           />
           <audio
             ref={audioRef}
@@ -43,45 +44,43 @@ function App() {
               Experienced with illustrative tools to bring elegant, functional,
               and visually striking interfaces to life.
             </p>
-            
-
           </div>
+
           <div className="image-group">
-            <img src="./images/P7100439.jpg" width="50px" alt="halle" />
+            <img src="/images/P7100439.jpg" width="50px" alt="Halle" />
             <span>Frontend Dev, Cheese Connoisseur</span>
           </div>
         </section>
 
         <a
-  href="mailto:hallevillegas28@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className="comic-button email" onMouseEnter={playSound}>
-    <img src="./images/envelope.png" width="40px" alt="Email" />
-  </button>
-</a>
+          href="mailto:hallevillegas28@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="comic-button email" onMouseEnter={playSound}>
+            <img src="/images/envelope.png" width="40px" alt="Email" />
+          </button>
+        </a>
 
-<a
-  href="https://www.linkedin.com/in/alyssa-vii/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className="comic-button linkedin" onMouseEnter={playSound}>
-    <img src="./images/linkedin.png" width="40px" alt="LinkedIn" />
-  </button>
-</a>
+        <a
+          href="https://www.linkedin.com/in/alyssa-vii/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="comic-button linkedin" onMouseEnter={playSound}>
+            <img src="/images/linkedin.png" width="40px" alt="LinkedIn" />
+          </button>
+        </a>
 
-<a
-  href="https://www.instagram.com/halle.vii/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className="comic-button instagram" onMouseEnter={playSound}>
-    <img src="./images/heart.png" width="40px" alt="Instagram" />
-  </button>
-</a>
-
+        <a
+          href="https://www.instagram.com/halle.vii/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="comic-button instagram" onMouseEnter={playSound}>
+            <img src="/images/heart.png" width="40px" alt="Instagram" />
+          </button>
+        </a>
       </main>
     </>
   )
