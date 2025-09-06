@@ -12,10 +12,12 @@ function App() {
     }
   }
 
+  const base = import.meta.env.BASE_URL // automatically handles dev vs GitHub Pages
+
   return (
     <>
       <img
-        src="/images/pooh-winnie-the-pooh.gif"
+        src={`${base}images/pooh-winnie-the-pooh.gif`}
         width="50px"
         id="pooh"
         alt="Pooh"
@@ -23,14 +25,14 @@ function App() {
       <main className="parent">
         <header>
           <img
-            src="/images/mifoi.png"
+            src={`${base}images/mifoi.png`}
             width="50px"
             onMouseEnter={playSound}
             alt="Logo"
           />
           <audio
             ref={audioRef}
-            src="/zapsplat_multimedia_button_click_fast_wooden_organic_004_78838.mp3"
+            src={`${base}zapsplat_multimedia_button_click_fast_wooden_organic_004_78838.mp3`}
           />
           <span>hey! it's halle ◡̈</span>
         </header>
@@ -47,7 +49,11 @@ function App() {
           </div>
 
           <div className="image-group">
-            <img src="/images/P7100439.jpg" width="50px" alt="Halle" />
+            <img
+              src={`${base}images/P7100439.jpg`}
+              width="50px"
+              alt="Halle"
+            />
             <span>Frontend Dev, Cheese Connoisseur</span>
           </div>
         </section>
@@ -58,7 +64,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <button className="comic-button email" onMouseEnter={playSound}>
-            <img src="/images/envelope.png" width="40px" alt="Email" />
+            <img src={`${base}images/envelope.png`} width="40px" alt="Email" />
           </button>
         </a>
 
@@ -68,7 +74,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <button className="comic-button linkedin" onMouseEnter={playSound}>
-            <img src="/images/linkedin.png" width="40px" alt="LinkedIn" />
+            <img src={`${base}images/linkedin.png`} width="40px" alt="LinkedIn" />
           </button>
         </a>
 
@@ -78,7 +84,7 @@ function App() {
           rel="noopener noreferrer"
         >
           <button className="comic-button instagram" onMouseEnter={playSound}>
-            <img src="/images/heart.png" width="40px" alt="Instagram" />
+            <img src={`${base}images/heart.png`} width="40px" alt="Instagram" />
           </button>
         </a>
       </main>
